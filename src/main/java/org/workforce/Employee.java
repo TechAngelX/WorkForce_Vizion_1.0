@@ -77,13 +77,13 @@ public class Employee {
     public String toString() {
         DecimalFormat decimalFormat = new DecimalFormat("#,###");
         String formattedSalary = decimalFormat.format(salary);
-        return String.format("%-15s %-15s %-8c %-7d %-15s %-17s £%-15s%n", firstName, lastName, gender, age, dept, role, formattedSalary);
+        return String.format("%-15s %-15s %-8c %-7d %-22s %-26s £%-15s%n", firstName, lastName, gender, age, dept, role, formattedSalary);
     }
 
     static void header() {
-        System.out.println("_____________________________________________________________________________________________");
-        System.out.printf("%-15s %-15s %-8s %-7s %-15s %-17s %-15s%n", "First Name", "Last Name", "Gender", "Age", "Dept.","Role", "Salary (£)");
-        System.out.println("---------------------------------------------------------------------------------------------");
+        System.out.println("______________________________________________________________________________________________________________");
+        System.out.printf("%-15s %-15s %-8s %-7s %-22s %-26s %-15s%n", "First Name", "Last Name", "Gender", "Age", "Dept.","Role", "Salary (£)");
+        System.out.println("--------------------------------------------------------------------------------------------------------------");
 
 
     }
